@@ -1,9 +1,12 @@
+import {
+  Tag as ChakraTag,
+  TagLabel,
+  TagLeftIcon,
+  useMediaQuery,
+} from '@chakra-ui/react';
 import React from 'react';
-import { Tag as ChakraTag, TagLabel, TagLeftIcon } from '@chakra-ui/react';
 import { FiCheck } from 'react-icons/fi';
 import { MdMailOutline } from 'react-icons/md';
-import { useMediaQuery } from '@chakra-ui/react';
-
 import { TiWarningOutline } from 'react-icons/ti';
 
 function Tag({ children, label, ...props }) {

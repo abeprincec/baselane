@@ -1,19 +1,17 @@
-import React from 'react';
+import { SearchIcon } from '@chakra-ui/icons';
 import {
-  Flex,
-  Heading,
-  Spacer,
-  Box,
-  Text,
   Center,
   Divider,
+  Heading,
   Input,
   InputGroup,
   InputLeftElement,
+  Spacer,
   Stack,
+  Text,
+  useMediaQuery,
 } from '@chakra-ui/react';
-import { SearchIcon } from '@chakra-ui/icons';
-import { useMediaQuery } from '@chakra-ui/react';
+import React from 'react';
 
 function Header({ children, currentTenants }) {
   const [isLargerThan768] = useMediaQuery('(min-width: 768px)');

@@ -1,6 +1,6 @@
+import { FormControl, FormLabel, Input } from '@chakra-ui/react';
 import React from 'react';
-import { FormLabel, Input, FormControl } from '@chakra-ui/react';
-function Form(props) {
+function Form() {
   return (
     <>
       <FormControl id="name">

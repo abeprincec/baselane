@@ -1,6 +1,5 @@
-import { Flex, Divider } from '@chakra-ui/react';
+import { Divider, Flex, useMediaQuery } from '@chakra-ui/react';
 import TagList from './TagList';
-import { useMediaQuery } from '@chakra-ui/react';
 
 function PropertyTags({ list }) {
   const [isLargerThan768] = useMediaQuery('(min-width: 768px)');

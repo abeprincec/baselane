@@ -1,23 +1,16 @@
+import { Box, ChakraProvider, Container } from '@chakra-ui/react';
 import React from 'react';
-import {
-  ChakraProvider,
-  Flex,
-  VStack,
-  Container,
-  Stack,
-  Box,
-} from '@chakra-ui/react';
-import theme from './theme';
-import { Header } from './components/Header';
 import { Accordion } from './components/Accordion';
+import { Header } from './components/Header';
 import { Table } from './components/Table';
-import Fonts from './fonts';
 import {
   activeTenantsColumns,
   activeTenantsData,
   archivedTenantsColumns,
   archivedTenantsData,
 } from './data';
+import Fonts from './fonts';
+import theme from './theme';
 function App() {
   return (
     <ChakraProvider theme={theme}>

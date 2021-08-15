@@ -1,6 +1,5 @@
+import { Box, Stack, Text, useMediaQuery } from '@chakra-ui/react';
 import React from 'react';
-import { Stack, Box, Text } from '@chakra-ui/react';
-import { useMediaQuery } from '@chakra-ui/react';
 
 const Columns = ({ headers }) => {
   const [isLargerThan768] = useMediaQuery('(min-width: 768px)');
@@ -11,6 +10,7 @@ const Columns = ({ headers }) => {
       <Box w="80px" />
       {headers.map(header => (
         <Text
+          key={header}
           fontSize="xs"
           color="gray.400"
           sx={{ userSelect: 'none' }}

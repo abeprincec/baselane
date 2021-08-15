@@ -1,19 +1,16 @@
-import React from 'react';
 import {
+  Box,
+  Button,
   Drawer as DrawerChakra,
   DrawerBody,
+  DrawerCloseButton,
+  DrawerContent,
   DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
   Heading,
-  FormLabel,
-  Input,
-  FormControl,
-  Box,
-  Button,
 } from '@chakra-ui/react';
+import React from 'react';
 
 function Drawer({ onClose, isOpen, children }) {
   return (

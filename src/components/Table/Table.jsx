@@ -1,23 +1,23 @@
-import React from 'react';
+import { TriangleDownIcon, TriangleUpIcon } from '@chakra-ui/icons';
 import {
   Box,
-  Flex,
-  Text,
-  Icon,
-  Divider,
   Button,
+  Divider,
+  Flex,
+  Icon,
   Stack,
+  Text,
+  useDisclosure,
+  useMediaQuery,
 } from '@chakra-ui/react';
-import { TriangleDownIcon, TriangleUpIcon } from '@chakra-ui/icons';
+import React from 'react';
 import { GoKebabVertical } from 'react-icons/go';
-import { useMediaQuery } from '@chakra-ui/react';
-import { useDisclosure } from '@chakra-ui/react';
-import Columns from './Columns';
-import TagList from './TagList';
-import PropertyList from './PropertyList';
-import PropertyTags from './PropertyTags';
 import { Drawer } from '../Drawer';
 import { Form } from '../Form';
+import Columns from './Columns';
+import PropertyList from './PropertyList';
+import PropertyTags from './PropertyTags';
+import TagList from './TagList';
 function Table({ columns, data }) {
   const [isLargerThan768] = useMediaQuery('(min-width: 768px)');
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -50,6 +50,7 @@ function Table({ columns, data }) {
               borderColor="gray.200"
               mb={6}
               p={6}
+              key={row.id}
             >
               <Stack align="center" direction={['column', 'row']}>
                 {row.isExpanded ? (
